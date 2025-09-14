@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>youtube.com Clone</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="youtube-icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="youtube-icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="youtube-icons/search-icon.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="youtube-icons/voice-search-icon.svg"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="youtube-icons/upload-icon.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="youtube-icons/youtube-apps.svg" />
+        <div class="notifications-icon-container">
+          <img
+            class="notifications-icon"
+            src="youtube-icons/notifications-icon.svg"
+          />
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-icons/channel-icon2.jpg"
+        />
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="youtube-icons/home-icon.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-icons/explore-icon.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-icons/subscriptions-icon.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-icons/originals-icon.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="youtube-icons/library-icon.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.avif" />
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon1.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">HTML & CSS Full Course-Beginner to Pro!</p>
+              <p class="video-author">SuperSimpleDev</p>
+              <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail3.avif" />
+            <div class="video-time">21:52</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon3.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                World Champion Gukesh vs Women's World Cup winner Divya Deshmukh
+              </p>
+              <p class="video-author">ChessBase India</p>
+              <p class="video-stats">19M views &#183; 4 days ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail4.avif" />
+            <div class="video-time">49:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon4.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Our Planet|One Planet|FULL EPISODE</p>
+              <p class="video-author">Netflix</p>
+              <p class="video-stats">12M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail5.avif" />
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon5.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                kaizan:becoming one percent better everyday
+              </p>
+              <p class="video-author">time of youth</p>
+              <p class="video-stats">18M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail6.avif" />
+            <div class="video-time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon6.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </p>
+              <p class="video-author">CS Dojo</p>
+              <p class="video-stats">519K views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-2.avif" />
+            <div class="video-time">22:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon2.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                "9XM Style 2010s Bollywood Morning Playlist|Top hits Collection"
+              </p>
+              <p class="video-author">Aditya Photography</p>
+              <p class="video-stats">141M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail7.avif" />
+            <div class="video-time">7:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon7.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">IDIOMS</p>
+              <p class="video-author">Domics</p>
+              <p class="video-stats">8.6M views &#183; 6 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail8.avif" />
+            <div class="video-time">22:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="channel-icons/channel-icon8.jpg"
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                I tried 50 Data Analyst Courses. Here are top 5
+              </p>
+              <p class="video-author">Mo chen</p>
+              <p class="video-stats">83K views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
